@@ -1,0 +1,49 @@
+@import 'tailwindcss';
+
+@theme {
+  --font-dark: var(--font-dark);
+  --font-inter: var(--font-inter);
+}
+
+
+body {
+  @apply font-inter
+}
+h1, h2, h3, h4, h5, h6 {
+  @apply font-dark
+}
+.font-inter{
+  @apply font-inter;
+}
+.font-dark{
+  @apply font-dark;
+}
+h1 {
+  @apply text-[64px] font-bold
+}
+h2 {
+  @apply text-[68px] font-bold
+}
+h3 {
+  @apply text-[40px] font-bold
+}
+h4 {
+  @apply text-[30px] font-bold
+}
+h5 {
+  @apply text-[22px];
+}
+h6 {
+  @apply text-[16px];
+}
+p {
+  @apply text-[18px]
+}
+.p-big {
+  @apply text-[440px]
+}
+
+
+.container {
+  @apply max-w-[1568px]
+}
