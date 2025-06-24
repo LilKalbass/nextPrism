@@ -4,6 +4,7 @@ import { useEffect, useRef, useState } from "react";
 
 export default function StickyHeader() {
     const topHeaderRef = useRef<HTMLDivElement>(null);
+    // eslint-disable-next-line @typescript-eslint/no-unused-vars
     const [isStuck, setIsStuck] = useState(false);
 
     useEffect(() => {
