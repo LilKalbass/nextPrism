@@ -87,7 +87,7 @@ export const AnimatedIconBorders = () => {
                     unparalleled access to the city&apos;s amenities and attractions, as well as an automotive hub.
                     Oshawa has evolved into a thriving community with booming sectors in health, education,
                     technology, and professional services. New developments, diverse dining, and retail options
-                    are transforming Oshawa into one of Canada's most vibrant cities.
+                    are transforming Oshawa into one of Canada&apos;s most vibrant cities.
                 </p>
             </div>
         </section>
