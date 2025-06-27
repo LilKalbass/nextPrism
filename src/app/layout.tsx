@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Darker_Grotesque, Inter_Tight } from "next/font/google";
+import { Darker_Grotesque, Inter_Tight, Playfair_Display } from "next/font/google";
 import "./globals.css";
 import {Header} from "../../components/Header";
 import {Footer} from "../../components/Footer";
@@ -11,6 +11,10 @@ const darkGrotesque = Darker_Grotesque({
 
 const interTight = Inter_Tight({
   variable: "--font-inter",
+  subsets: ["latin"],
+});
+const playF = Playfair_Display({
+  variable: "--font-playf",
   subsets: ["latin"],
 });
 
@@ -27,7 +31,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${darkGrotesque.variable} ${interTight.variable} antialiased`}
+        className={`${darkGrotesque.variable} ${playF.variable} ${interTight.variable} antialiased`}
       >
         <Header/>
         {children}

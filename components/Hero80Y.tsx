@@ -4,7 +4,7 @@ import Image from "next/image";
 
 export const Hero80Y = () => {
     return (
-        <section className="relative w-full h-[90vh] bg-gray-900 text-white overflow-hidden">
+        <section className="relative w-full h-[92vh] bg-gray-900 text-white overflow-hidden">
             <Image
                 src="https://images.unsplash.com/photo-1750810977313-f009e3b0c4bd?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                 fill

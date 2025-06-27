@@ -3,6 +3,9 @@ import {StickyHeader} from "../../../components/StickyHeader";
 import {ForRent} from "../../../components/ForRent";
 import {AnimatedIconBorders} from "../../../components/AnimatedIconBorders";
 import {GallerySection} from "../../../components/GallerySection";
+import {IconsGridSec} from "../../../components/IconsGridSec";
+import {NeibWalk} from "../../../components/NeibWalk";
+import {Testimonials} from "../../../components/Testimonials";
 
 export default function BondPage() {
     return (
@@ -11,12 +14,10 @@ export default function BondPage() {
             <StickyHeader/>
             <ForRent/>
             <AnimatedIconBorders/>
+            <IconsGridSec/>
+            <NeibWalk/>
+            <Testimonials/>
             <GallerySection/>
-            <div className="max-w-7xl mx-auto px-4 py-10 space-y-8">
-                {[...Array(20)].map((_, i) => (
-                    <div key={i} className="h-32 bg-gray-100 rounded-lg shadow-inner" />
-                ))}
-            </div>
         </div>
     );
 }

@@ -3,6 +3,12 @@
 @theme {
   --font-dark: var(--font-dark);
   --font-inter: var(--font-inter);
+  --font-playf: var(--font-playf);
+
+  --breakpoint-ph: 480px;
+  --breakpoint-tabl: 768px;
+  --breakpoint-popScr: 1600px;
+  --breakpoint-main: 1900px;
 }
 
 
@@ -10,13 +16,16 @@ body {
   @apply font-inter
 }
 h1, h2, h3, h4, h5, h6 {
-  @apply font-dark
+  @apply font-playf
 }
 .font-inter{
   @apply font-inter;
 }
 .font-dark{
   @apply font-dark;
+}
+.font-playf {
+  @apply font-playf
 }
 h1 {
   @apply text-[64px] font-bold
@@ -45,5 +54,5 @@ p {
 
 
 .container {
-  @apply max-w-[1568px]
+  @apply max-w-full main:px-[8%] popScr:px-[20px] tabl:px-[20px] px-[10px]
 }

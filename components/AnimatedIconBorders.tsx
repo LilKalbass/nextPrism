@@ -6,7 +6,7 @@ import { FaWalking, FaBicycle } from "react-icons/fa";
 import type { ReactNode } from "react";
 
 const RADIUS = 60;
-const CIRCUMFERENCE = 2 * Math.PI * RADIUS; // ≈ 377
+const CIRCUMFERENCE = 2 * Math.PI * RADIUS;
 
 const circleVariants: Variants = {
     hidden: { strokeDashoffset: CIRCUMFERENCE },
@@ -60,11 +60,11 @@ export const AnimatedIconBorders = () => {
                 />
             </svg>
             <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white drop-shadow">
-                <div className="text-[100px]">{Icon}</div>
+                <div className="text-[160px]">{Icon}</div>
             </div>
-            <div className="flex items-end justify-center gap-2.5 mt-2">
-                <span className="text-[40px] leading-[120%]">{score}</span>
-                <p>{label}</p>
+            <div className="flex items-end justify-center gap-2.5 mt-2.5">
+                <span className="text-[52px] leading-[120%]">{score}</span>
+                <p className='leading-[200%]'>{label}</p>
             </div>
         </div>
     );
@@ -76,11 +76,10 @@ export const AnimatedIconBorders = () => {
         >
             <div className="container mx-auto">
                 <h2 className="text-center pb-[70px]">Now is the time. This is the place.</h2>
-                <div className="flex justify-center gap-10 items-center pb-[80px] flex-wrap">
+                <div className="flex justify-center gap-16 items-center pb-[120px] flex-wrap">
                     {renderScore(<FaWalking />, 95, "walk score", 0.95)}
                     {renderScore(<FaBicycle />, 80, "bike score", 0.8)}
                 </div>
-
                 <p className="max-w-[80%] mx-auto">
                     Oshawa has become one of Canada&apos;s most dynamic cities, known for its rapid population and
                     economic growth. Located in the heart of Ontario, the city offers modern living with

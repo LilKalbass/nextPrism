@@ -70,15 +70,15 @@ export const ForRent = () => {
 
 
     return (
-        <section className='bg-[#F7F9FA] py-[100px]'>
+        <section className='bg-[#F7F9FA] py-[100px]' id='forRentSec'>
             <div className='container mx-auto flex flex-col gap-[50px]'>
                 <div className='flex  flex-col gap-[50px]'>
                     <h2 className='text-[#1A1A1A] text-center'>For Rent</h2>
                     <div className='flex items-center justify-between'>
                         {rentList.map((item, index) => (
-                            <div key={index} className='flex flex-col p-[26px] bg-white w-[510px]'>
-                                <Image src={item.img} alt='qwe' width={510} height={300} className='object-cover pb-8 h-[300px]'/>
-                                <div className='flex flex-col gap-6 pb-[40px]'>
+                            <div key={index} className='flex flex-col p-[26px] bg-white rounded-[8px] w-[510px]'>
+                                <Image src={item.img} alt='qwe' width={510} height={300} className='object-cover h-[300px] rounded-[8px]'/>
+                                <div className='flex flex-col gap-6 pb-[40px] pt-8'>
                                     <div className='flex items-center justify-between'>
                                         <h5 className='max-w-[320px]'>{item.title}</h5>
                                         <div className='flex flex-col items-end'>
@@ -135,8 +135,8 @@ export const ForRent = () => {
                     <div className='flex items-center justify-between '>
                         {mediaTourList.map((item, index) => (
                             <a href={item.link} key={index} className= 'relative flex group'>
-                                <Image src={item.img} alt='qwe' width={370} height={342} className='object-fit w-[370px] h-[342px]'/>
-                                <div className='flex flex-col gap-5 items-center justify-center absolute inset-0 bg-black/15 text-white'>
+                                <Image src={item.img} alt='qwe' width={370} height={342} className='object-fit bg-transparent rounded-[8px] w-[370px] h-[342px]'/>
+                                <div className='flex flex-col gap-5 items-center justify-center absolute inset-0 bg-black/15 rounded-[8px] text-white'>
                                     <span className='group-hover:scale-115 transition-all duration-300 flex items-center rounded-full justify-center w-[60px] h-[60px] bg-white'><BiPlay className='text-4xl text-[#1A1A1A]'/></span>
                                     <div className='justify-center items-center flex flex-col'>
                                         <h5 className='font-bold'>{item.title}</h5>
